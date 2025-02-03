@@ -1,0 +1,46 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f4f4f4;
+  }
+  
+  .app-container {
+    text-align: center;
+  }
+  
+  .dropdown {
+    margin-bottom: 20px;
+    background: blue;
+    padding: 20px 20px;
+    color:#fff
+  }
+  select{
+    padding: 6px 16px;
+    width: 200px;
+  }
+  
+  .dashboard {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: auto;
+  }
+  
+  h1, h2, h3 {
+    color: #333;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  li {
+    background: #e3e3e3;
+    margin: 5px;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  

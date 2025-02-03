@@ -1,0 +1,119 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    font-family: "Poppins", sans-serif;
+}
+
+/* Dashboard Container */
+.dashboard-container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 20px;
+  }
+  
+  /* Section 1 Layout: Chart + Calls Table */
+  .section-one {
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .left-section{
+    background: rgb(214 230 249);
+    padding: 20px;
+  }
+  .right-section{
+    background: rgb(214 230 249);
+    padding: 20px;
+  }
+  .right-section h3{
+    font-size: 14px;
+    color:#0a1afd;
+  }
+  .left-section, .right-section {
+    flex: 1;
+    min-width: 300px;
+  }
+  
+  /* Section 2 Layout: Account Summary Table */
+  .section-two {
+    margin-top: 30px;
+    background: rgb(214 230 249);
+    padding: 20px;
+  }
+  
+  /* Tables */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    font-size:13px;
+  }
+  
+  table th, table td {
+    padding: 10px;
+    text-align: center;
+    
+  }
+  
+  table th {
+    color:#0a1afd;
+    background-color: #b1cdef;
+  }
+  tbody{
+    background: #fff;
+  }
+  
+  .pagination {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+  }
+  
+  .pagination button {
+    padding: 8px 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .pagination button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .section-one {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .left-section, .right-section {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  
+    .pagination {
+      flex-direction: column;
+      gap: 5px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    table th, table td {
+      font-size: 12px;
+      padding: 8px;
+    }
+  
+    .pagination button {
+      font-size: 12px;
+      padding: 6px 12px;
+    }
+  }
+  
